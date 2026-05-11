@@ -4,43 +4,47 @@
 To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
 
 ##   PROBLEM STATEMENT AND DATASET
-Include the Problem Statement and Dataset.
+The objective of this project is to create a CNN that can categorize images of fashion items from the Fashion MNIST dataset. This dataset includes grayscale images of clothing and accessories such as T-shirts, trousers, dresses, and footwear. The task is to accurately predict the correct category for each image while ensuring the model is efficient and robust.
+
+1.Training data: 60,000 images
+
+2.Test data: 10,000 images
+
+3.Classes: 10 fashion categories
+
+The CNN consists of multiple convolutional layers with activation functions, followed by pooling layers, and ends with fully connected layers to output predictions for all 10 categories.
 
 ## Neural Network Model
-Include the neural network model diagram.
+<img width="1903" height="696" alt="image" src="https://github.com/user-attachments/assets/6b4c0ef1-685a-4bed-9226-a39a65744db6" />
+
 
 ## DESIGN STEPS
 ### STEP 1: 
-
-Write your own steps
+Import the required libraries (torch, torchvision, torch.nn, torch.optim) and load the image dataset with necessary preprocessing like normalization and transformation.
 
 ### STEP 2: 
-
+Split the dataset into training and testing sets and create DataLoader objects to feed images in batches to the CNN model.
 
 
 ### STEP 3: 
-
+Define the CNN architecture using convolutional layers, ReLU activation, max pooling layers, and fully connected layers as implemented in the CNNClassifier class.
 
 
 ### STEP 4: 
-
+Initialize the model, define the loss function (CrossEntropyLoss), and choose the optimizer (Adam) for training the network.
 
 
 ### STEP 5: 
-
-
+Train the model using the training dataset by performing forward pass, computing loss, backpropagation, and updating weights for multiple epochs.
 
 ### STEP 6: 
-
-
-
-
+Evaluate the trained model on test images and verify the classification accuracy for new unseen images.
 
 ## PROGRAM
 
-### Name:
+### Name: Malar Mariam S
 
-### Register Number:
+### Register Number: 212223230118
 
 ```python
 class CNNClassifier(nn.Module):
@@ -104,11 +108,12 @@ def train_model(model, train_loader, num_epochs=3):
 <img width="661" height="532" alt="image" src="https://github.com/user-attachments/assets/44b8e8a0-902a-4dd8-9243-9dc55ab5dfca" />
 
 
-
 ## Classification Report
 <img width="396" height="268" alt="image" src="https://github.com/user-attachments/assets/3568f300-f473-43f4-8790-adce689ec882" />
 
+## New Sample Data Prediction
+<img width="549" height="640" alt="image" src="https://github.com/user-attachments/assets/a4f31289-fb18-4b38-b8bd-fe1b3d7b585f" />
+
 
 ## RESULT
-<img width="549" height="596" alt="image" src="https://github.com/user-attachments/assets/1deda2f8-916c-49a6-b8da-495ae79e3954" />
-
+The Convolutional Neural Network (CNN) model was successfully trained and achieved good classification performance on the given image dataset.
